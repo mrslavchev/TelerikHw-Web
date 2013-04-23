@@ -1,0 +1,57 @@
+﻿article
+{
+    border:2px solid black;
+    border-collapse:collapse;
+    background-color:#595959;
+    font-family:Calibri;
+    font-weight:bold;
+    width:400px;
+}
+dt 
+{
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: left;
+    font-style:italic;
+    color: #FFFFFF;
+    padding:2px;
+
+}
+dt:after 
+{
+    content: ":";
+}
+dd 
+{
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+}
+.gray 
+{
+    color:#929E97;
+}
+#ticket 
+{
+    font-size:x-large;
+    margin-top:5px;
+}
+.yellow 
+{
+    color:#E7E0A6;
+}
+#red 
+{
+    color:#F40712;
+}
+#orange 
+{
+    color:#D86D23;
+}
+img 
+{
+    vertical-align:middle;
+    width:17px;
+    height:17px;
+    margin-bottom:3px;
+}

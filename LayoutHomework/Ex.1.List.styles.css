@@ -1,0 +1,30 @@
+﻿ul {
+    list-style-type: none;
+}
+
+a 
+{
+    text-decoration:none;
+    color: black;
+}
+ul li ul li a 
+{
+    color:gray;
+}
+li { 
+    float: left; 
+    clear: left;
+    }
+
+    ul li > ul {
+        display: none;
+    }
+
+    ul li:hover > ul {
+        display: block;
+    }
+
+    ul li:hover > a {
+        color: black;
+        text-decoration: underline
+    }

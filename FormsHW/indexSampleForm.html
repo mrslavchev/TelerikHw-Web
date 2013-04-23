@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My sample form</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <table border="1" cellpadding="1" cellspacing="a" style="width:600px">
+            <colgroup>
+                <col style="width:200px"/>
+                <col style="width:400px"/>
+                <col style="width:auto"/>
+                <col style="width:auto"/>
+
+
+            </colgroup>
+            <tr>
+                <td align="right"><label for="lastName"><strong>Last Name</strong></label></td>
+                <td colspan="3">
+                    <input style="width:98%" type="text" id="lastName" title="Family" pattern="[A-z A-z]+"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="firstName"><strong>First Name</strong></label></td>
+                <td colspan="3">
+                    <input style="width:98%" type="text" id="firstName" title="Name" pattern="[A-z A-z]+"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="address"><strong>Address</strong></label>
+                </td>
+                <td colspan="3">
+                    <textarea  style="width:98%" name="adress" title="Address" id="address"></textarea>
+                </td>
+            </tr>   
+            <tr>    
+                <td align="right">
+                    <label for="city"><strong>City</strong></label>
+                </td>
+                <td align="right">
+                    <input type="text" title="City" id="city" style="width:250px"/>
+                </td>
+                <td align="right">
+                    <label for="state"><strong>State</strong></label>
+                </td>
+                <td align="right">
+                    <input type="text" title="State" id="state" style="width:160px"/>
+                </td>
+            </tr>   
+            <tr>    
+                <td align="right"><label for="postal"><strong>Zip/Postal code</strong></label></td>
+                <td align="left" colspan="3">
+                    <input type="text" style="width:60px" id="postal" title="Zip code"/>
+                </td>
+            </tr>   
+            <tr>    
+                <td align="right"><label for="country"><strong>Country</strong></label></td>
+                <td align="left" colspan="3">
+                    <select name="countries" id="country" title="Select a country">
+                        <option value="value1">Bulgaria</option>
+                        <option value="value2">Serbia</option>
+                        <option value="value3">Romania</option>
+                        <option>Republic of the hobbits, The Shire</option>
+                    </select>
+                </td>
+            </tr>   
+            <tr>    
+                <td align="right">
+                    <label for="phone"><strong>Phone (Country code, area code,number)</strong></label>
+                </td>
+                <td align="left" colspan="3">
+                    (+<input type="text" style="width:60px" title="Country code" pattern="[0-9]{3,4}" id="phone"/> )
+                    <input type="text" style="width:60px" title="Area code" pattern="[0-9]{1,3}" id="area"/>
+                    -<input type="text" style="width:80px" title="Phone number" pattern="[0-9]{8,10}" id="number"/>
+                    
+                    
+                </td>
+            </tr>   
+            <tr>    
+                <td align="right">
+                    <label for="mail"><strong>E-mail</strong></label>
+                </td>
+                <td align="left" colspan="3">
+                    <input type="email" style="width:200px" id="mail" title="E-mail address" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>
+                </td>
+            </tr>   
+            <tr>    
+                <td align="right">
+                    <label for="bday"><strong>Birth date</strong></label>
+                </td>
+                <td align="left" colspan="3">
+                    Month <input type="text" style="width:30px" title="Mounth" pattern="[0-9]{2}" id="bday"/>
+                    Day <input type="text" style="width:30px" title="Day" pattern="[0-9]{2}" id="bday2"/>
+                    Year (4 digit) <input type="text" style="width:60px" title="Year" pattern="[0-9]{2}" id="bdate"/>
+                </td>
+            </tr>  
+            <tr>   
+                <td align="right">
+                    <label for="gender"><strong>Gender</strong></label>
+                </td>
+                <td align="left" colspan="3">
+                    <select id="gender" title="Gender"> 
+                        <option value="value1">Male</option>
+                        <option value="value2">Female</option>
+                    </select>
+                </td>
+            </tr>  
+            <tr>   
+                <td align="right">
+                    <strong>Starting date</strong>
+                </td>
+                <td align="left" colspan="3">
+                    <label for="sdate">Spring 2006</label>
+                    <input type="radio" id="sdate" name="date" value="Spring 2006" title="Starting date"/>
+                    <label for="stdate">Summer 2006</label>
+                    <input type="radio" id="stdate" name="date" value="Summer 2006" title="Starting date"/>
+                </td>
+            </tr>   
+            <tr>    
+                <td align="right">
+                    <label for="comment"><strong>Comments/ Quotations</strong></label>
+                </td>
+                <td align="left" colspan="3">
+                    <textarea style="width:98%" id="comment" title="Comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="4" bgcolor="#00FFFF">
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" value="Clear This Form"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

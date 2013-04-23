@@ -1,0 +1,41 @@
+﻿body
+{
+    background-color:#C3C3D0;
+}
+h1, li 
+{
+    color:white;
+}
+ul 
+{
+    list-style-type:none;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+.center 
+{
+    text-align:center;
+}
+a 
+{
+    text-decoration:none;
+}
+
+a 
+{
+    color:inherit;
+}
+a:hover 
+{
+   text-decoration:underline;
+   
+}
+.current 
+{
+    background-color:#DFDDDD;
+}
+footer p 
+{
+    font-size:12px;
+}

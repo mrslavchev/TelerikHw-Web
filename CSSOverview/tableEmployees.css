@@ -1,0 +1,40 @@
+﻿table, th, td
+{
+    width:600px;
+    border:2px solid #CCCAB5;
+    border-collapse:collapse;
+    padding:4px;
+    padding-left:8px;
+    font-family:Corbel;
+    text-align:left;
+}
+.wide 
+{
+    width:30%;
+}
+#city 
+{
+    width:22%;
+}
+#isPromoted 
+{
+    width:18%;
+}
+th 
+{
+    color:#FFFFFF;
+    background-color:#53B606;
+    font-weight:normal;
+}
+tr:nth-of-type(2n)
+{
+    background-color:#ECECD8;
+}
+.images 
+{
+    width:34px;
+    height:21px;
+    vertical-align:middle;
+    padding:1px;
+    padding-right:8px;
+}

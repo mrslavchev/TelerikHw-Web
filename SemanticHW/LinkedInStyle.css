@@ -1,0 +1,12 @@
+﻿header
+{
+    border-bottom:1px solid black;
+}
+section 
+{
+    border:2px solid black;
+}
+ul#circle
+{
+    list-style-type:circle;
+}

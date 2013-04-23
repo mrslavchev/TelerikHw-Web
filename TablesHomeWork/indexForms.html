@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Blank</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="form.aspx">
+            <fieldset style="width:300px">
+                <label for="Membername">Member name :</label>
+                <input type ="text" name="User" id="Membername" required ="required" title="Member Name" pattern="[A-z A-z]+"/>* req
+                <br />
+                <label for="EMail">Email :</label>
+                <input type="email" name="email" id="EMail" required="required" title="Mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>* req
+                <br />
+                <label for="School">School :</label>
+                <input type="text" name="School" id="School" required="required" title="School"  pattern="[A-z A-z 0-9]+"/>* req
+                <br />
+                <input type="image" src="Button.gif" name="sumbmitBtn" alt="submit" width="62" height="30" title="Submit"/>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
