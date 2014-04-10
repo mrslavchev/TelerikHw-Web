@@ -1,0 +1,56 @@
+.animation (@name, @duration: 300, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
+}
+
+#simple-web-gallery
+{
+ nav {
+   
+   ul {
+   
+     li {
+
+	    list-style:none;
+        display:inline-block;
+
+		.thubnail {
+
+		   width: 150px;
+		   height:150px;
+		}
+	  }
+    }
+  }
+}
+
+.images-container {
+    
+	position:relative;
+
+	input[type="radio"]{
+
+	   display:none;
+	   &:checked + .image {
+
+	      opacity:1;
+		  .animation(1.5s);
+
+	   }
+
+	}
+
+	.image {
+
+	   width: 400px;
+	   height:400px;
+	   opacity:0;
+	   display:inline-block;
+	   position:absolute;
+	   left:106px;
+
+	}
+
+}
+
