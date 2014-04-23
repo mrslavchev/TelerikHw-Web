@@ -1,0 +1,59 @@
+html, body, div, aside, article, p, h1, h2, h3,
+a, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none; }
+
+#wrapper {
+  width: 960px; }
+
+body {
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px; }
+
+#wrapper {
+  padding: 25px; }
+
+#wrapper > div {
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 30px;
+  width: 860px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(top, #de28ff, #f9dbff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #de28ff, #f9dbff);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #de28ff, #f9dbff);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top, #de28ff, #f9dbff);
+  /* Standard syntax */ }
+
+img {
+  position: absolute; }
+  img.left-arrow, img.right-arrow {
+    top: 110px;
+    left: 25px; }
+  img.right-arrow {
+    left: 927px; }
+
+h1 {
+  font-size: 1.8em; }
+
+.postedby {
+  margin-top: 5px;
+  margin-bottom: 22px;
+  margin-left: 12px;
+  padding: 5px 15px;
+  display: inline-block;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.info {
+  text-align: justify; }
+

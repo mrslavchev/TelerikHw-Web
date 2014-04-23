@@ -1,0 +1,56 @@
+@import 'reset';
+@import 'mixins';
+
+body{
+	font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+	font-size: 16px;
+
+}
+
+#wrapper{
+	padding:25px;
+}
+
+#wrapper > div{
+	border:1px solid black;
+	padding-top:20px;
+	padding-left:35px;
+	padding-right:35px;
+	padding-bottom:30px;
+	width:860px;
+
+	@include border-radius(15px);
+	@include linear-gradient(top, #DE28FF, #F9DBFF);
+}
+
+img{
+	position:absolute;
+
+	&.left-arrow{
+		top:110px;
+		left:25px;
+	}
+
+	&.right-arrow{
+		@extend .left-arrow;
+		left:927px;
+	}
+}
+
+h1{
+	font-size:1.8em;
+}
+
+.postedby{
+	margin-top:5px;
+	margin-bottom:22px;
+	margin-left:12px;
+	padding:5px 15px;
+	display:inline-block;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+
+.info{
+	text-align:justify;
+}

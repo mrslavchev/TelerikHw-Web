@@ -1,0 +1,54 @@
+@mixin linear-gradient($direction, $top, $bottom){
+	background: -webkit-linear-gradient($direction, $top, $bottom); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($direction, $top, $bottom); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($direction, $top, $bottom); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($direction, $top, $bottom); /* Standard syntax */
+}
+
+@mixin border-radius($grades){
+	-webkit-border-radius: $grades;
+	-moz-border-radius: $grades;
+	border-radius: $grades;
+}
+
+@mixin top-radius($grades){
+	-webkit-border-top-left-radius: $grades;
+	-webkit-border-top-right-radius: $grades;
+	-moz-border-radius-topleft: $grades;
+	-moz-border-radius-topright: $grades;
+	border-top-left-radius: $grades;
+	border-top-right-radius: $grades;
+}
+
+@mixin bottom-radius($grades){
+	-webkit-border-bottom-left-radius: $grades;
+	-webkit-border-bottom-right-radius: $grades;
+	-moz-border-radius-bottomleft: $grades;
+	-moz-border-radius-bottomright: $grades;
+	border-bottom-left-radius: $grades;
+	border-bottom-right-radius: $grades;
+}
+
+@mixin tl-radius($grades){
+	-webkit-border-top-left-radius: $grades;
+	-moz-border-radius-topleft: $grades;
+	border-top-left-radius: $grades;
+}
+
+@mixin tr-radius($grades){
+	-webkit-border-top-right-radius: $grades;
+	-moz-border-radius-topright: $grades;
+	border-top-right-radius: $grades;
+}
+
+@mixin br-radius($grades){
+	-webkit-border-bottom-right-radius: $grades;
+	-moz-border-radius-bottomright: $grades;
+	border-bottom-right-radius: $grades;
+}
+
+@mixin bl-radius($grades){
+	-webkit-border-bottom-left-radius: $grades;
+	-moz-border-radius-bottomleft: $grades;
+	border-bottom-left-radius: $grades;
+}

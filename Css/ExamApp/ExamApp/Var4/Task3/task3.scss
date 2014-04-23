@@ -1,0 +1,117 @@
+@import 'reset';
+@import 'mixins';
+
+body{
+	font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+	font-size: 16px;
+
+}
+
+#wrapper{
+	padding:20px;
+
+	& > div{
+		border-top:2px solid #D3D7DA;
+		border-bottom:2px solid #D3D7DA;
+		width:148px;
+		display:inline-block;
+		float:left;
+		padding-top:10px;
+		padding-left:4px;
+
+		&:nth-child(1){
+			padding-bottom:45px;
+			border-left:2px solid #D3D7DA;
+			background-image:url('imgs/install.png');
+			background-repeat:no-repeat;
+			background-position:5px 10px;
+		}
+
+		&:nth-child(2){
+			padding-bottom:20px;
+			@include linear-gradient(top, #fff, #F1F2F3);
+			background-image:url('imgs/tuneUp.png');
+			background-repeat:no-repeat;
+			background-position:5px 10px;
+		}
+
+		&:nth-child(3){
+			background-image:url('imgs/manage.png');
+			background-repeat:no-repeat;
+			background-position:5px 10px;
+		}
+		
+		&:nth-child(4){
+			padding-top:30px;
+			background-image:url('imgs/openSource.png');
+			background-repeat:no-repeat;
+			background-position:5px 10px;
+		}
+
+		&:nth-child(5){
+			padding-top:30px;
+			padding-bottom:45px;
+			margin-right:5px;
+			background-image:url('imgs/twitter.png');
+			background-repeat:no-repeat;
+			background-position:5px 10px;
+		}
+
+		&:nth-child(6){
+			padding-top:30px;
+			background-image:url('imgs/about.png');
+			background-repeat:no-repeat;
+			background-position:5px 10px;
+		}
+
+		&:nth-child(2n){
+			height:280px;
+			border-left:2px solid #D3D7DA;
+			border-right:2px solid #D3D7DA;
+			
+			@include linear-gradient(top, #fff, #F1F2F3);
+		}
+		
+		&:nth-child(2n + 1){
+			
+		}
+	}
+}
+
+h2, h3{
+	font-size:1em;
+	text-align:left;
+	margin-left:40px;
+}
+
+p{
+	margin-top:20px;
+	margin-right:4px;
+
+	& + div{
+		margin-top:7px;
+
+		& > a{
+			float:left;
+			clear:both;
+		}
+
+		& > a > span{
+			text-transform:uppercase;
+		}
+	}
+}
+
+
+.yellowBox{
+	background:#FFFFDD;
+	border:1px solid #FFFF00;
+
+	& > a{
+		float:none;
+	}
+}
+
+a{
+	color:#CF2D2F;	
+}

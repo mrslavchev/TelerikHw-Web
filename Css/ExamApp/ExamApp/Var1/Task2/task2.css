@@ -1,0 +1,108 @@
+/*Mixins*/
+/*Reset*/
+html, body, div, ul, li, a, td, th {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: normal;
+  list-style: none;
+  color: black; }
+
+body {
+  font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+  font-size: 16px; }
+
+#wrapper {
+  width: 930px; }
+
+.tab-strip {
+  margin-top: 15px;
+  margin-left: 15px;
+  border: 1px solid black;
+  display: inline-block;
+  height: 230px;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  .tab-strip > li {
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid black; }
+    .tab-strip > li > a {
+      font-size: 1.3em; }
+  .tab-strip > li:nth-child(1), .tab-strip > li:nth-child(2), .tab-strip > li:nth-child(3) {
+    border-right: 1px solid black; }
+
+li > ul, li > div {
+  display: none; }
+
+li.current {
+  position: static;
+  border-bottom-style: none; }
+  li.current > a {
+    font-weight: bold;
+    border-bottom-style: none; }
+  li.current > ul, li.current > div {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 10px; }
+
+div.tab-content > ul > li {
+  list-style-type: disc;
+  position: relative;
+  top: -10px;
+  left: 30px; }
+  div.tab-content > ul > li > ul {
+    display: block;
+    position: relative;
+    left: 30px; }
+    div.tab-content > ul > li > ul > li {
+      list-style-type: lower-alpha; }
+
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse; }
+
+table {
+  position: relative; }
+
+th, td {
+  width: 95px;
+  height: 30px; }
+
+th {
+  text-align: center;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ababab, #eeeeee);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ababab, #eeeeee);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ababab, #eeeeee);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ababab, #eeeeee);
+  /* Standard syntax */ }
+
+td {
+  padding-left: 5px;
+  background: #EEEEEE; }
+
+.tab-strip > li {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(#ededed, #ababab);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ededed, #ababab);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ededed, #ababab);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ededed, #ababab);
+  /* Standard syntax */ }
+  .tab-strip > li:hover {
+    background: #EEEEEE; }
+

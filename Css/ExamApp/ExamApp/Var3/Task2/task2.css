@@ -1,0 +1,51 @@
+html, body, div, aside, article, p, h1, h2, h3,
+a, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none; }
+
+#wrapper {
+  width: 960px; }
+
+body {
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 16px;
+  padding: 25px; }
+
+.all-items, .selected-items {
+  text-align: left;
+  height: 200px;
+  width: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(top, #8168ff, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #8168ff, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #8168ff, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top, #8168ff, white);
+  /* Standard syntax */ }
+  .all-items > li, .selected-items > li {
+    padding-left: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black; }
+    .all-items > li:first-letter, .selected-items > li:first-letter {
+      text-decoration: underline; }
+  .all-items .selected, .selected-items .selected {
+    background: #6C4EFF; }
+
+.all-items, .selected-items, .selected-items, img {
+  float: left;
+  display: inline-block; }
+
+img {
+  position: relative;
+  top: 90px;
+  margin: 3px; }
+

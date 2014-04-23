@@ -1,0 +1,122 @@
+@mixin linear-gradident($top, $bottom){
+	background: -webkit-linear-gradient($top, $bottom); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($top, $bottom); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($top, $bottom); /* Standard syntax */
+}
+
+@mixin round-borders($grades){
+	-webkit-border-radius: $grades;
+	-moz-border-radius: $grades;
+	border-radius: $grades;
+}
+
+body, div, ul, li, span, p, h1
+{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	list-style-type:none;
+}
+
+#wrapper{
+	padding:30px;
+	width:930px;
+}
+
+div#wrapper > div{
+	border:1px solid black;
+	width:380px;
+	@include round-borders(15px);
+	@include linear-gradident(#eee, #aaa);
+}
+
+h1{
+	text-align:center;
+	font-size:1.8em;
+	font-family:Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+	padding-top:20px;
+}
+
+li{
+	display:inline-block;
+	border:1px solid black;
+	margin-top:3px;
+	margin-left:15px;
+	margin-right:15px;
+	width:230px;
+	@include round-borders(15px);
+}
+
+.me-item{
+	float:right;
+	clear:left;
+	@include linear-gradident(#29EDFF, #C0FAFF);
+}
+
+.toshko-item{
+	@include linear-gradident(#DFFFD2, #6FFF3B);
+	& > span:first-child{
+		display:block;
+		text-align:right;
+		font-weight:bold;
+		margin-top:11px;
+		margin-right:18px;
+	}
+
+	& > p{
+		margin-left:18px;
+	}
+}
+
+.me-item {
+	& > span:first-child{
+		display:block;
+		font-weight:bold;
+		margin-left:18px;
+	}
+
+	& > p{
+		margin-left:18px;
+	}
+}
+
+span.date{
+	display:block;
+	text-align:right;
+	font-family:consolas;
+	margin-right:18px;
+	font-size:0.8em;
+}
+
+.toshko-item > span.date{
+	display:block;
+	margin-left:18px;
+	text-align:left;
+	
+}
+
+input {
+	margin-left:18px;
+	margin-top:3px;
+	margin-bottom:10px;
+	width:275px;
+	@include round-borders(7px);
+	background:#eee;
+}
+
+button{
+	width:65px;
+	@include round-borders(7px);
+	@include linear-gradident(#EDEDED, #ADADAD);
+	font-size:1.1em;
+}
+
+input, button{
+	height:35px;
+
+}
+
+button:hover{
+	background:#fff;
+}

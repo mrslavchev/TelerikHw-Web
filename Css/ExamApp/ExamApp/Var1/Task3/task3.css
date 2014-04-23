@@ -1,0 +1,122 @@
+body, div, ul, li, span, p, h1 {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none; }
+
+#wrapper {
+  padding: 30px;
+  width: 930px; }
+
+div#wrapper > div {
+  border: 1px solid black;
+  width: 380px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(#eeeeee, #aaaaaa);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#eeeeee, #aaaaaa);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#eeeeee, #aaaaaa);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#eeeeee, #aaaaaa);
+  /* Standard syntax */ }
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+  padding-top: 20px; }
+
+li {
+  display: inline-block;
+  border: 1px solid black;
+  margin-top: 3px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 230px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+
+.me-item {
+  float: right;
+  clear: left;
+  background: -webkit-linear-gradient(#29edff, #c0faff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#29edff, #c0faff);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#29edff, #c0faff);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#29edff, #c0faff);
+  /* Standard syntax */ }
+
+.toshko-item {
+  background: -webkit-linear-gradient(#dfffd2, #6fff3b);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#dfffd2, #6fff3b);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#dfffd2, #6fff3b);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#dfffd2, #6fff3b);
+  /* Standard syntax */ }
+  .toshko-item > span:first-child {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 11px;
+    margin-right: 18px; }
+  .toshko-item > p {
+    margin-left: 18px; }
+
+.me-item > span:first-child {
+  display: block;
+  font-weight: bold;
+  margin-left: 18px; }
+.me-item > p {
+  margin-left: 18px; }
+
+span.date {
+  display: block;
+  text-align: right;
+  font-family: consolas;
+  margin-right: 18px;
+  font-size: 0.8em; }
+
+.toshko-item > span.date {
+  display: block;
+  margin-left: 18px;
+  text-align: left; }
+
+input {
+  margin-left: 18px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  width: 275px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background: #eee; }
+
+button {
+  width: 65px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background: -webkit-linear-gradient(#ededed, #adadad);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ededed, #adadad);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ededed, #adadad);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ededed, #adadad);
+  /* Standard syntax */
+  font-size: 1.1em; }
+
+input, button {
+  height: 35px; }
+
+button:hover {
+  background: #fff; }
+

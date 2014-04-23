@@ -1,0 +1,92 @@
+body, div, form {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-size: 16px; }
+
+#wrapper {
+  width: 960px;
+  padding-left: 25px;
+  padding-top: 25px; }
+
+form {
+  border: 1px solid black;
+  text-align: right;
+  padding: 15px;
+  width: 380px;
+  webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(#68d1ff, #8cfffb);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#68d1ff, #8cfffb);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#68d1ff, #8cfffb);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#68d1ff, #8cfffb);
+  /* Standard syntax */ }
+
+fieldset {
+  border: 3px solid black;
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+legend {
+  font-size: 1.3em;
+  font-style: italic;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+input {
+  height: 20px;
+  margin-top: 2px;
+  border: none;
+  border: 1px solid #008FCE;
+  background: -webkit-linear-gradient(#69d2ff, #8bfefb);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#69d2ff, #8bfefb);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#69d2ff, #8bfefb);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#69d2ff, #8bfefb);
+  /* Standard syntax */ }
+  input[type="text"], input[type="password"] {
+    width: 180px; }
+  input[type="number"] {
+    width: 40px;
+    padding-left: 4px; }
+  input[type="reset"] {
+    height: 32px;
+    width: 120px;
+    font-size: 1.2em;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid black; }
+    input[type="reset"]:hover {
+      background: #9BE1FF; }
+
+button {
+  height: 32px;
+  width: 140px;
+  font-size: 1.2em;
+  margin-top: 15px;
+  border-bottom: 1px solid black;
+  background: -webkit-linear-gradient(#69d2ff, #8bfefb);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#69d2ff, #8bfefb);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#69d2ff, #8bfefb);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#69d2ff, #8bfefb);
+  /* Standard syntax */ }
+  button:hover {
+    background: #9BE1FF; }
+
+input, button {
+  webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+

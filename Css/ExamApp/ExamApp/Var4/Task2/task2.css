@@ -1,0 +1,60 @@
+html, body, div, aside, article, p, h1, h2, h3,
+a, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none; }
+
+#wrapper {
+  width: 960px; }
+
+body {
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 16px; }
+  body a {
+    color: black; }
+
+#wrapper {
+  padding: 15px; }
+  #wrapper > div {
+    padding: 10px;
+    width: 680px;
+    background: #CCCCCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+
+.holder {
+  display: inline-block; }
+  .holder > img {
+    width: 550px;
+    height: 415px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+
+.playlist {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 3px; }
+
+img {
+  display: block; }
+
+li {
+  text-align: center;
+  font-weight: bold;
+  width: 120px;
+  border-bottom: 1px solid black;
+  padding-bottom: 7px;
+  margin-bottom: 5px; }
+  li img {
+    margin-left: 12px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+
+span:hover {
+  text-decoration: underline; }
+
